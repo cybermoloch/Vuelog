@@ -46,6 +46,25 @@ window.Vuelog = {
       // Fill in the uid to integrate LiveRe with your blog.
       livereUid: '',
 
+      // Fill in Vssue options to integrate Vssue comments with your blog.
+      vssueEnabled: true,
+      vssueOptions: {
+        'api': 'GithubV3',
+        'owner': 'OWNER_OF_REPO',
+        'repo': 'NAME_OF_REPO',
+        'clientId': 'YOUR_CLIENT_ID',
+        'clientSecret': 'YOUR_CLIENT_SECRET', // only required for some of the platforms
+        // 'baseURL': '', // leave commented unless self-hosting and need to specifiy new baseURL
+        'state': '',
+        'labels': '[\'Vssue\']',
+        'prefix': '[Vssue]',
+        'admins': [],
+        'perPage': 10,
+        'proxy': '',
+        'issueContent': '',
+        'autoCreateIssue': false
+      },      
+
       // Options for marked, see https://github.com/chjj/marked#options-1 for detail
       markedOptions: {}
     },
